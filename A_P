@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+ 
+int main () {
+   // an array with 5 elements.
+   int a[5] = {1,2,3,4,5};
+   int *p;
+
+   p = a;
+ 
+   // output each array element's value
+   cout << "Entered elements: " <<"\n";
+   
+   for ( int i = 0; i < 5; i++ ) {
+    
+      cout << *(p + i) <<"\n";
+   }
+   cout << "You entered: " <<"\n";
+   
+   for ( int i = 0; i < 5; i++ ) {
+
+      cout << *(a + i) <<"\n";
+   }
+ 
+   return 0;
+}
